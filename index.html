@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Filmes</title>
+    <link rel="stylesheet" href="estilos.css"> 
+    <script src="app.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+
+<body onload="carregaFilmes()">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <header class="container header">
+        <div class="row">
+            <div class="col-12 header_area">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-2">
+                        <img src="https://media.cdnandroid.com/item_images/1127676/imagen-play-cine-v4-0big.jpg" class="logo">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-8 col-lg-10 menu_area">
+                        <nav class="nav nav-pills flex-column flex-sm-row">
+                            <a class="flex-sm-fill text-sm-center nav-link" href="#">Lançamentos</a>
+                            <a class="flex-sm-fill text-sm-center nav-link" href="#">Em destaques</a>
+                            <a class="flex-sm-fill text-sm-center nav-link" href="#">Avaliações</a>
+                            <a class="flex-sm-fill text-sm-center nav-link" href="#">Novidades</a>
+                            <input type="text" id="inputPesquisa"><button id="btnPesquisa" onclick="pesquisaFilmes()">Pesquisar</button>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+<main class="container">
+    <div class="row arealancamento">
+        <div class="col-12 lancamento">
+            <h3>Lançamentos</h3>
+        </div>
+
+    </div>
+    
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row"> 
+                            <div class="col-md-6">
+                                <iframe  width="100%" height="400" src="https://www.youtube.com/embed/jFxOxLLzjG8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="col-md-6 ">
+                                <h3>Medo da chuva</h3>
+                                <p>Uma mulher com esquizofrenia, que luta com alucinações terríveis, começa a suspeitar que seu vizinho raptou uma criança. A única pessoa que acredita nela é Caleb, um garoto que ela nem tem certeza se existe.</p>
+                                <span class="infoFilmes">Diretor:  Castille Landon</span>
+                                <span class="infoFilmes">Roteiro: Scott Silver</span>
+                                <span class="infoFilmes">Estreia: 2021</span>
+                                <br>
+                                <br>
+                                <p class="infoFilmes">Elenco:</p>
+                                <p> Robert Molloy, Joseph Restaino, Dori Sperko , Brett Cullen </p>
+                                <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+                                <p>Avaliação:</p>
+                                <p>⭐⭐⭐⭐</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row"> 
+                            <div class="col-md-6">
+                                <iframe width="100%" height="400" src="https://www.youtube.com/embed/NnDGWyfP7q4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="col-md-6">
+                                <h3>Velozes e Furiosos 9</h3>
+                                <p>O longa vem dando continuidade às corridas eletrizantes da equipe de amigos liderada por Dominic Toretto.</p>
+                                <span class="infoFilmes">Diretor: Justin Lin</span>
+                                <span class="infoFilmes">Roteiro: Christina Hodson</span>
+                                <span class="infoFilmes">Estreia: 2021 </span>
+                                <br>
+                                <br>
+                                <p class="infoFilmes">Elenco:</p>
+                                <p>Vin Diesel, Justin Lin, Samantha Vincent, Jeff Kirschenbaum, Clayton Townsend, Neal H. Moritz, Joe Roth</p>
+                                <p>Avaliação:</p>
+                                <p>⭐⭐⭐⭐⭐</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row"> 
+                            <div class="col-md-6">
+                                <iframe width="100%" height="400" src="https://www.youtube.com/embed/eHCAgSuLog4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="col-md-6">
+                                <h3>Batman: Alma do Dragão</h3>
+                                <p>Batman enfrenta inimigos do passado com a ajuda de três antigos colegas: o treinador de artes marciais Richard Dragon, Ben Turner e Lady Shiva.</p>
+                                <span class="infoFilmes">Diretor: Sam Liu</span>
+                                <span class="infoFilmes">Roteiro: Worm Miller</span>
+                                <span class="infoFilmes">Estreia: 2021</span>
+                                <br>
+                                <br>
+                                <p class="">Elenco:</p>
+                                <p>Sam Liu, James Krieg, Kimberly S. Moreau </p>
+                                <p>Avaliação:</p>
+                                <p>⭐⭐⭐⭐⭐</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+        </div>
+<br>
+        <h3>Melhores Filmes</h3>
+<br>
+    <div class="container-fluid">
+        <div class="row" id="tela">
+            <div class="card col-4">
+                <img src="https://source.unsplash.com/random/200x300" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">A volta dos que não foram</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quia atque
+                        sint at. Illum harum delectus facilis sunt eligendi dolores.</p>
+                    <a href="#" class="btn btn-primary">Abrir Filme</a>
+                </div>
+            </div>
+            <div class="card col-4">
+                <img src="https://source.unsplash.com/random/200x300" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">A volta dos que não foram</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quia atque
+                        sint at. Illum harum delectus facilis sunt eligendi dolores.</p>
+                    <a href="#" class="btn btn-primary">Abrir Filme</a>
+                </div>
+            </div>
+            <div class="card col-4">
+                <img src="https://source.unsplash.com/random/200x300" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">A volta dos que não foram</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quia atque
+                        sint at. Illum harum delectus facilis sunt eligendi dolores.</p>
+                    <a href="#" class="btn btn-primary">Abrir Filme</a>
+                </div>
+            </div>
+            <div class="card col-4">
+                <img src="https://source.unsplash.com/random/200x300" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">A volta dos que não foram</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quia atque
+                        sint at. Illum harum delectus facilis sunt eligendi dolores.</p>
+                    <a href="#" class="btn btn-primary">Abrir Filme</a>
+                </div>
+            </div>
+            <div class="card col-4">
+                <img src="https://source.unsplash.com/random/200x300" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">A volta dos que não foram</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quia atque
+                        sint at. Illum harum delectus facilis sunt eligendi dolores.</p>
+                    <a href="#" class="btn btn-primary">Abrir Filme</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+    <footer class="container footer">
+        <div class="row">
+            <div class="col-12 footer_area">
+                Copyright 2021 - Diciplina de Desenvolvimento de Interface Web - ICEI PUC MINAS
+            </div>
+        </div>
+    </footer>
+    <scriptsrc="https://code.jquery.com/jquery-3.4.1.slim.min.js"integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"crossorigin="anonymous"></script><scriptsrc="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"crossorigin="anonymous"></script><scriptsrc="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"crossorigin="anonymous"></script>
+
+</body>
+
+</html>
